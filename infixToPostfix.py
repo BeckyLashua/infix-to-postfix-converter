@@ -5,7 +5,7 @@
 # expression from the user and prints out the corresponding postfix expression.
 
 
-### FUNCTION DESCRIPTION DO THESE ON ALL
+# FUNCTION DESCRIPTION DO THESE ON ALL
 def run_program():
     # Get a string from the user
     user_input = get_input()
@@ -24,7 +24,7 @@ def get_input():
     return input("Enter an infix expression: ")
 
 
-# precondition: string passed to function must be already fully paranthesized and a valid 
+# precondition: string passed to function must be already fully parenthesized and a valid
 # infix expression.
 def convert_to_postfix(infix_expression):
     output = ''  # this will hold the postfix expression
@@ -85,7 +85,8 @@ def convert_to_postfix(infix_expression):
                     # else they have equal precedence
                     else:
                         pass
-
+        elif letter == ' ':
+            pass
         else:
             output += letter
 
@@ -107,7 +108,7 @@ def convert_to_postfix(infix_expression):
 
 
 def parenthesize(expression):
-    # Returns an infix expression fully paranthesized. 
+    # Returns an infix expression fully parenthesized.
 
     return expression
 
